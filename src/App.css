@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+.link-style {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0.4em 1em;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+}
+
+.suggest-resource {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #abc4f7, #778ebc);
+  color: #fff;
+  border: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
