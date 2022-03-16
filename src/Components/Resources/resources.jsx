@@ -1,14 +1,14 @@
 import React from "react";
+import "./resources.css";
 
 export default function Resources() {
   return (
     <>
-      <h1>Resources</h1>
-      <h2>Beginner</h2>
-      <h2>Twitter</h2>
-      <h2>Reddits</h2>
-      <h2>Youtube</h2>
-      <h2>Dev Resources</h2>
+      <section className="section1-resources">
+        <div>Resources</div>
+        <div>Reddits</div>
+        <div>Dev Tools</div>
+      </section>
     </>
   );
 }

@@ -11,19 +11,21 @@ function App() {
     <div className="App">
       <nav className="navigation-bar">
         <div className="div-blockroot">
-          <SiBlockchaindotcom /> BlockRoot
+          <SiBlockchaindotcom /> BlockSource
         </div>
-        <Link to="/" className="link-style">
-          Home
-        </Link>
-        <br />
-        <Link to="/about" className="link-style">
-          About
-        </Link>
-        <br />
-        <Link to="/suggestaresource" className="link-style">
-          Suggest a Resource
-        </Link>
+        <div className="navigation-bar-links">
+          <Link to="/" className="link-style">
+            Home
+          </Link>
+          <br />
+          <Link to="/about" className="link-style">
+            About
+          </Link>
+          <br />
+          <Link to="/suggestaresource" className="link-style">
+            Suggest Resource
+          </Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
