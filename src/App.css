@@ -2,11 +2,17 @@
   text-align: center;
 }
 
+.navigation-bar {
+  width: 100vw;
+}
+
 .link-style {
-  margin: 0.4em 1em;
+  margin: 0.4em 2em;
   font-size: 1.2em;
   text-decoration: none;
   color: white;
+  font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .suggest-resource {
@@ -19,8 +25,11 @@
   display: flex;
   justify-content: flex-end;
   font-size: 1em;
+  margin-left: 3em;
 }
 
 .div-blockroot {
   font-size: 2em;
+  font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace;
 }

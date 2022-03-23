@@ -2,4 +2,14 @@
   background-color: rgb(220, 230, 226);
   display: flex;
   justify-content: space-evenly;
+  padding: 8em;
+  margin-bottom: 0px;
+  font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1em;
+}
+
+.footer-overview {
+  background-color: #8a39e1;
+  height: 245px;
 }
