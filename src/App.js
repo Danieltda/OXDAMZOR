@@ -3,6 +3,7 @@ import "./App.css";
 import { Link, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import AboutPage from "./Components/AboutPage/AboutPage";
+import DailyNewsItem from "./Components/DailyNewsItem/DailyNewsItem";
 import SuggestaResource from "./Components/Suggestaresource/SuggestaResource";
 import { SiBlockchaindotcom } from "react-icons/si";
 
@@ -22,6 +23,10 @@ function App() {
             About
           </Link>
           <br />
+          <Link to="/dailynewsitem" className="link-style">
+            Daily News Item
+          </Link>
+          <br />
           <Link to="/suggestaresource" className="link-style">
             Suggest Resource
           </Link>
@@ -30,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/dailynewsitem" element={<DailyNewsItem />} />
         <Route path="/suggestaresource" element={<SuggestaResource />} />
       </Routes>
     </div>
