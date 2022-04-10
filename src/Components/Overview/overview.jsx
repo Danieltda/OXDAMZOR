@@ -11,7 +11,7 @@ export default function Overview() {
         </div>
 
         <p className="overview-section-p">
-          BlockSource is created to help people further in their knowledge of
+          BlockSources is created to help people further in their knowledge of
           Ethereum. Studying myself to become a developer in this field, I came
           across many useful resources that helped me tremendously.
           <br />

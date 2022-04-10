@@ -4,8 +4,6 @@ import "./resources.css";
 import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Resources() {
-  const [like, setLike] = useState([]);
-
   return (
     <>
       <section className="section1-resources">

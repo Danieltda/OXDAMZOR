@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <nav className="navigation-bar">
         <div className="div-blockroot">
-          <SiBlockchaindotcom /> BlockSource
+          <SiBlockchaindotcom /> BlockSources
         </div>
         <div className="navigation-bar-links">
           <Link to="/" className="link-style">
