@@ -4,7 +4,6 @@ import { Link, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import AboutPage from "./Components/AboutPage/AboutPage";
 import DailyNewsItem from "./Components/DailyNewsItem/DailyNewsItem";
-import SuggestaResource from "./Components/Suggestaresource/SuggestaResource";
 import { SiBlockchaindotcom } from "react-icons/si";
 
 function App() {
@@ -26,17 +25,12 @@ function App() {
           <Link to="/dailynewsitem" className="link-style">
             Daily News Item
           </Link>
-          <br />
-          <Link to="/suggestaresource" className="link-style">
-            Suggest Resource
-          </Link>
         </div>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/dailynewsitem" element={<DailyNewsItem />} />
-        <Route path="/suggestaresource" element={<SuggestaResource />} />
       </Routes>
     </div>
   );
