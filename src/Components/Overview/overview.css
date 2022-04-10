@@ -1,3 +1,14 @@
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .overview-section-s1 {
   display: flex;
   justify-content: flex-start;
@@ -11,14 +22,11 @@
     "Liberation Mono", Menlo, Courier, monospace;
   padding-bottom: 1em;
   font-weight: 400;
-}
-
-.hr {
-  margin-left: 1em;
+  width: 90%;
 }
 
 .overview-section-p {
-  margin-left: 3em;
+  margin-left: 8em;
   letter-spacing: 0.05em;
   word-wrap: break-word;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -26,4 +34,5 @@
     Segoe UI Symbol;
   font-size: 1em;
   text-align: left;
+  width: 40%;
 }
