@@ -2,8 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Link, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
-import AboutPage from "./Components/AboutPage/AboutPage";
-import DailyNewsItem from "./Components/DailyNewsItem/DailyNewsItem";
+import MetaMask from "./Components/AboutPage/AboutPage.jsx";
+import ETHcalc from "./Components/ETHcalc/ETHcalc.jsx"
 import { SiBlockchaindotcom } from "react-icons/si";
 
 function App() {
@@ -11,26 +11,23 @@ function App() {
     <div className="App">
       <nav className="navigation-bar">
         <div className="div-blockroot">
-          <SiBlockchaindotcom /> BlockSources
+          <SiBlockchaindotcom /> OXDAMZOR
         </div>
         <div className="navigation-bar-links">
           <Link to="/" className="link-style">
             Home
           </Link>
           <br />
-          <Link to="/about" className="link-style">
-            About
+          <Link to="/ETHcalc" className="link-style">
+            ETHcalc
           </Link>
           <br />
-          <Link to="/dailynewsitem" className="link-style">
-            Daily News Item
-          </Link>
+          <MetaMask/>
         </div>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/dailynewsitem" element={<DailyNewsItem />} />
+        <Route path="/ETHcalc" element={<ETHcalc/>} />
       </Routes>
     </div>
   );

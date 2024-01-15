@@ -4,11 +4,22 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { MetaMaskUIProvider } from '@metamask/sdk-react-ui';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <MetaMaskUIProvider sdkOptions={{
+      dappMetadata: {
+        name: "Example React UI Dapp",
+        url: window.location.host,
+      }
+      // Other options
+    }}>
       <App />
+      </MetaMaskUIProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

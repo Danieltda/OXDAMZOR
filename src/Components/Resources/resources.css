@@ -8,7 +8,7 @@
   background-color: rgb(220, 230, 226);
   display: flex;
   justify-content: space-around;
-  padding: 8em;
+  padding: 3em;
   margin-bottom: 0px;
   font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
@@ -16,21 +16,24 @@
 }
 
 .section1-resources-sources {
-  background-color: gainsboro;
+  background-color: rgb(255, 255, 255);
   flex-basis: calc(33.333% - 10px);
+  border-radius: 25px;
 }
 
 .section1-resources-titles {
   font-size: 1.5em;
+  font-family: Montserrat__subset, Montserrat, sans-serif;
+  margin: 1em;
 }
 
 .section1-resources-li {
-  background-color: #8a39e1;
   margin: 1em;
 }
 
 a {
-  color: white;
+  color: rgb(99, 95, 95);
+  font-family: Montserrat__subset, Montserrat, sans-serif;
 }
 
 .footer-overview {
@@ -47,4 +50,8 @@ a {
 .section1-footer-icons > a {
   margin-left: 0.5em;
   margin-top: 0.5em;
+}
+
+.li:nth-child(even) {
+  background-color: #bdf6e9;
 }
