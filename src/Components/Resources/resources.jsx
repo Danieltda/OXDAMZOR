@@ -1,6 +1,7 @@
 import React from "react";
 import "./resources.css";
 import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
+import twitter from "../../Images/logo-black.png.twimg.1920.png";
 
 export default function Resources() {
   return (
@@ -64,6 +65,7 @@ export default function Resources() {
       </section>
       <section className="section1-resources">
         <div className="section1-resources-sources">
+        <div><img src={twitter} width="100" alt="Twitter"/></div>
           <h1 className="section1-resources-titles">TWITTER </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
