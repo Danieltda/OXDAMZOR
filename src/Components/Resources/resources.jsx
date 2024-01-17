@@ -1,13 +1,19 @@
 import React from "react";
 import "./resources.css";
 import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
-import twitter from "../../Images/logo-black.png.twimg.1920.png";
+import twitter from "../../Images/twitter.png";
+import reddit from "../../Images/reddit.png";
+import documentation from "../../Images/documentation.jpeg";
+import discord from "../../Images/discord.png";
+import devtools from "../../Images/devtools.jpg"; 
+import cryptography from "../../Images/cryptography.png";
 
 export default function Resources() {
   return (
     <>
       <section className="section1-resources">
         <div className="section1-resources-sources">
+        <div><img src={documentation} width="30" alt="Documentation"/></div>
           <h1 className="section1-resources-titles">Documentation </h1>
           <ul>
             <li className="section1-resources-li">
@@ -29,6 +35,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
+        <div><img src={devtools} width="50" alt="Dev Tools"/></div>
           <h1 className="section1-resources-titles">DEV TOOLS </h1>
           <ul>
             <li className="section1-resources-li">
@@ -52,6 +59,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
+        <div><img src={cryptography} width="30" alt="Cryptography"/></div>
           <h1 className="section1-resources-titles">CRYPTOGRAPHY </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -65,7 +73,7 @@ export default function Resources() {
       </section>
       <section className="section1-resources">
         <div className="section1-resources-sources">
-        <div><img src={twitter} width="100" alt="Twitter"/></div>
+        <div><img src={twitter} width="30" alt="Twitter"/></div>
           <h1 className="section1-resources-titles">TWITTER </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -98,6 +106,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
+        <div><img src={reddit} width="30" alt="Reddit"/></div>
           <h1 className="section1-resources-titles">REDDITS </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -115,6 +124,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
+        <div><img src={discord} width="30" alt="Discords"/></div>
           <h1 className="section1-resources-titles">DISCORDS </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">

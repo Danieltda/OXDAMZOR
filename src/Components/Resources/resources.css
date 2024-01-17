@@ -36,6 +36,10 @@ a {
   font-family: Montserrat__subset, Montserrat, sans-serif;
 }
 
+a:hover{
+  background-color: rgb(243, 240, 240);
+}
+
 .footer-overview {
   background-color: #8a39e1;
   height: 100px;
