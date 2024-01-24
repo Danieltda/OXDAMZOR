@@ -1,6 +1,5 @@
 import React from "react";
 import "./resources.css";
-import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 import twitter from "../../Images/twitter.png";
 import reddit from "../../Images/reddit.png";
 import documentation from "../../Images/documentation.jpeg";
@@ -13,7 +12,7 @@ export default function Resources() {
     <>
       <section className="section1-resources">
         <div className="section1-resources-sources">
-        <div><img src={documentation} width="30" alt="Documentation"/></div>
+        <div><img className="img-logo" src={documentation} width="30" alt="Documentation"/></div>
           <h1 className="section1-resources-titles">Documentation </h1>
           <ul>
             <li className="section1-resources-li">
@@ -35,7 +34,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
-        <div><img src={devtools} width="50" alt="Dev Tools"/></div>
+        <div><img className="img-logo" src={devtools} width="50" alt="Dev Tools"/></div>
           <h1 className="section1-resources-titles">DEV TOOLS </h1>
           <ul>
             <li className="section1-resources-li">
@@ -59,7 +58,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
-        <div><img src={cryptography} width="30" alt="Cryptography"/></div>
+        <div><img className="img-logo" src={cryptography} width="30" alt="Cryptography"/></div>
           <h1 className="section1-resources-titles">CRYPTOGRAPHY </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -73,7 +72,7 @@ export default function Resources() {
       </section>
       <section className="section1-resources">
         <div className="section1-resources-sources">
-        <div><img src={twitter} width="30" alt="Twitter"/></div>
+        <div><img className="img-logo" src={twitter} width="30" alt="Twitter"/></div>
           <h1 className="section1-resources-titles">TWITTER </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -106,7 +105,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
-        <div><img src={reddit} width="30" alt="Reddit"/></div>
+        <div><img className="img-logo" src={reddit} width="30" alt="Reddit"/></div>
           <h1 className="section1-resources-titles">REDDITS </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -124,7 +123,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="section1-resources-sources">
-        <div><img src={discord} width="30" alt="Discords"/></div>
+        <div><img className="img-logo" src={discord} width="30" alt="Discords"/></div>
           <h1 className="section1-resources-titles">DISCORDS </h1>
           <ul className="section1-resources-sources">
             <li className="section1-resources-li">
@@ -142,21 +141,6 @@ export default function Resources() {
           </ul>
         </div>
       </section>
-      <footer className="footer-overview">
-        {" "}
-        <div className="section1-footer-icons">
-          <a href="https://github.com/Danieltda" target="_blank" rel="noreferrer">
-            {" "}
-            <FaGithubSquare />
-          </a>
-          <a href="https://mobile.twitter.com/Gr4mzl3gend" target="_blank" rel="noreferrer">
-            <FaTwitterSquare />
-          </a>
-          <a href="https://www.linkedin.com/in/danieltendamme/" target="_blank" rel="noreferrer">
-            <FaLinkedin />
-          </a>
-        </div>
-      </footer>
     </>
   );
 }

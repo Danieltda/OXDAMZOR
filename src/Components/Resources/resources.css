@@ -29,15 +29,22 @@
 
 .section1-resources-li {
   margin: 1em;
+  border-bottom:0.5px solid #8a39e1;
+  border-top: 0.5px solid #8a39e1;
 }
 
 a {
   color: rgb(99, 95, 95);
   font-family: Montserrat__subset, Montserrat, sans-serif;
+
 }
 
 a:hover{
   background-color: rgb(243, 240, 240);
+}
+
+.img-logo{
+  margin-top: 1em;
 }
 
 .footer-overview {

@@ -1,0 +1,6 @@
+.overview-section-s1 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 9em;
+  }

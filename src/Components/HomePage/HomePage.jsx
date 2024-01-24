@@ -1,6 +1,7 @@
 import React from "react";
 import Overview from "../Overview/overview";
 import Resources from "../Resources/resources";
+import ETHcalc from "../ETHcalc/ETHcalc";
 
 function HomePage() {
   return (
@@ -10,6 +11,9 @@ function HomePage() {
       </section>
       <section>
         <Resources />
+      </section>
+      <section>
+      <ETHcalc/>
       </section>
     </>
   );
