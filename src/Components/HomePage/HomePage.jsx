@@ -1,5 +1,5 @@
 import React from "react";
-import Overview from "../Overview/overview";
+import Overview from "../Overview/overview"
 import Resources from "../Resources/resources";
 import ETHcalc from "../ETHcalc/ETHcalc";
 

@@ -4,3 +4,58 @@
     background-color: white;
     padding: 9em;
   }
+
+  .ethereum-balance-checker {
+    max-width: 500px; /* Increased max-width */
+    margin: auto;
+    padding: 30px; /* Increased padding */
+    border: 1px solid #3498db;
+    border-radius: 10px; /* Increased border-radius */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3); /* Increased box-shadow */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap between elements */
+  }
+  
+  label {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  input {
+    padding: 12px; /* Increased padding */
+    border: 1px solid #3498db;
+    border-radius: 6px; /* Increased border-radius */
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:hover,
+  form:hover input {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Increased box-shadow effect */
+  }
+  
+  button {
+    padding: 12px; /* Increased padding */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .result {
+    margin-top: 25px; /* Increased margin-top */
+    font-weight: bold;
+    color: #2ecc71;
+  }
+  

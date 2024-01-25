@@ -1,10 +1,17 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
 .link-style {
-  margin: 0.9em 2em;
-  font-size: 1.2em;
+  margin: 1em 1em; /* Adjusted margin for larger screens */
+  font-size: 1.2em; /* Increased font size for larger screens */
   text-decoration: none;
   color: white;
   font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
@@ -19,14 +26,30 @@
 
 .navigation-bar-links {
   display: flex;
-  justify-content: flex-end;
-  font-size: 1em;
-  margin-left: 3em;
+  align-items: center;
 }
 
 .div-blockroot {
-  font-size: 2em;
+  font-size: 2em; /* Increased font size for larger screens */
   font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
 }
 
+/* Update background color and increase margin */
+.navigation-bar {
+  background-color: #8a39e1;
+  padding: 30px; /* Increase padding for more height */
+  margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+/* Responsive Styles for Phones and Tablets */
+@media (max-width: 576px) {
+  .link-style {
+    margin: 0.5em 0.5em;
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .div-blockroot {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}
