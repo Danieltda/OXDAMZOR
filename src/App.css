@@ -10,7 +10,7 @@ body {
 }
 
 .link-style {
-  margin: 1em 1em; /* Adjusted margin for larger screens */
+  margin: 1em 3em; /* Adjusted margin for larger screens */
   font-size: 1.2em; /* Increased font size for larger screens */
   text-decoration: none;
   color: white;
@@ -42,8 +42,22 @@ body {
   margin-bottom: 30px; /* Add margin at the bottom */
 }
 
-/* Responsive Styles for Phones and Tablets */
-@media (max-width: 576px) {
+.link-style {
+  margin: 1em 3em; /* Adjusted margin for larger screens */
+  font-size: 1.2em; /* Increased font size for larger screens */
+  text-decoration: none;
+  color: white;
+  font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace;
+  transition: color 0.3s; /* Added transition effect for color change */
+}
+
+.link-style:hover {
+  color: #aaaaaa; /* Change text color on hover */
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
   .link-style {
     margin: 0.5em 0.5em;
     font-size: 1em; /* Adjust font size for smaller screens */
@@ -51,5 +65,21 @@ body {
 
   .div-blockroot {
     font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Responsive Styles for Phones */
+@media (max-width: 576px) {
+  .link-style {
+    margin: 0.5em 0.5em;
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .div-blockroot {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .navigation-bar {
+    padding: 20px; /* Adjust padding for phones */
   }
 }

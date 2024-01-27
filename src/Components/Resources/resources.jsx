@@ -4,143 +4,120 @@ import twitter from "../../Images/twitter.png";
 import reddit from "../../Images/reddit.png";
 import documentation from "../../Images/documentation.jpeg";
 import discord from "../../Images/discord.png";
-import devtools from "../../Images/devtools.jpg"; 
+import devtools from "../../Images/devtools.jpg";
 import cryptography from "../../Images/cryptography.png";
 
 export default function Resources() {
   return (
-    <>
-      <section className="section1-resources">
-        <div className="section1-resources-sources">
-        <div><img className="img-logo" src={documentation} width="30" alt="Documentation"/></div>
-          <h1 className="section1-resources-titles">Documentation </h1>
-          <ul>
-            <li className="section1-resources-li">
-              <a
-                href="https://ethereum.org/en/developers/docs/"
-                target="_blank" rel="noreferrer"
-              >
-                Ethereum Docs - Ethereum Development Documentation
-              </a>
-            </li>
-            <li className="section1-resources-li">
-              <a
-                href="https://ethereum.org/en/developers/docs/"
-                target="_blank" rel="noreferrer"
-              >
-                Ethdocs - Ethereum Homestead Documentation
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="section1-resources-sources">
-        <div><img className="img-logo" src={devtools} width="50" alt="Dev Tools"/></div>
-          <h1 className="section1-resources-titles">DEV TOOLS </h1>
-          <ul>
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://trufflesuite.com/ganache/" target="_blank" rel="noreferrer">
-                Ganache - One Click Blockchain
-              </a>
-            </li>
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://hardhat.org/" target="_blank" rel="noreferrer">
-                Hardhat - Ethereum Development Environment
-              </a>
-            </li>
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://metamask.io/" target="_blank" rel="noreferrer">
-                Metamask - Blockchain Wallet
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="section1-resources-sources">
-        <div><img className="img-logo" src={cryptography} width="30" alt="Cryptography"/></div>
-          <h1 className="section1-resources-titles">CRYPTOGRAPHY </h1>
-          <ul className="section1-resources-sources">
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://cryptocellar.org/" target="_blank" rel="noreferrer">
-                Cryptocellar - Cryptology and Its History
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section className="section1-resources">
-        <div className="section1-resources-sources">
-        <div><img className="img-logo" src={twitter} width="30" alt="Twitter"/></div>
-          <h1 className="section1-resources-titles">TWITTER </h1>
-          <ul className="section1-resources-sources">
-            <li className="section1-resources-li">
-              {" "}
-              <a
-                href="https://twitter.com/VitalikButerin?s=20&t=bPOdTxT3_DMCMqzxGTeLGg"
-                target="_blank" rel="noreferrer"
-              >
-                Vitalik Buterin
-              </a>
-            </li>
-            <li className="section1-resources-li">
-              {" "}
-              <a
-                href="https://twitter.com/_buildspace"
-                target="_blank" rel="noreferrer"
-              >
-                Buildspace
-              </a>
-            </li> 
-            <li className="section1-resources-li">
-              {" "}
-              <a
-                href="https://twitter.com/ethereum"
-                target="_blank" rel="noreferrer"
-              >
-                Ethereum Foundation
-              </a>
-            </li> 
-          </ul>
-        </div>
-        <div className="section1-resources-sources">
-        <div><img className="img-logo" src={reddit} width="30" alt="Reddit"/></div>
-          <h1 className="section1-resources-titles">REDDITS </h1>
-          <ul className="section1-resources-sources">
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://www.reddit.com/r/ethdev/" target="_blank" rel="noreferrer">
-                Ethdev - Ethereum Development and DApps
-              </a>
-            </li>
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://www.reddit.com/r/ethdev/" target="_blank" rel="noreferrer">
-                Crypto Devs - Crypto-related Developer Discussions
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="section1-resources-sources">
-        <div><img className="img-logo" src={discord} width="30" alt="Discords"/></div>
-          <h1 className="section1-resources-titles">DISCORDS </h1>
-          <ul className="section1-resources-sources">
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://discord.com/invite/CetY6Y4" target="_blank" rel="noreferrer">
-                Ethereum - Ethereum Main
-              </a>
-            </li>
-            <li className="section1-resources-li">
-              {" "}
-              <a href="https://discord.gg/gK3dXFhM" target="_blank" rel="noreferrer">
-                Ethereum R&D - Core Technical Ethereum
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </>
+    <div className="resources-container">
+      <ResourceItem
+        image={documentation}
+        title="Documentation"
+        links={[
+          {
+            text: "Ethereum Docs - Ethereum Development Documentation",
+            href: "https://ethereum.org/en/developers/docs/",
+          },
+          {
+            text: "Ethdocs - Ethereum Homestead Documentation",
+            href: "https://ethereum.org/en/developers/docs/",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={devtools}
+        title="DEV TOOLS"
+        links={[
+          {
+            text: "Ganache - One Click Blockchain",
+            href: "https://trufflesuite.com/ganache/",
+          },
+          {
+            text: "Hardhat - Ethereum Development Environment",
+            href: "https://hardhat.org/",
+          },
+          {
+            text: "Metamask - Blockchain Wallet",
+            href: "https://metamask.io/",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={cryptography}
+        title="CRYPTOGRAPHY"
+        links={[
+          {
+            text: "Cryptocellar - Cryptology and Its History",
+            href: "https://cryptocellar.org/",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={twitter}
+        title="TWITTER"
+        links={[
+          {
+            text: "Vitalik Buterin",
+            href: "https://twitter.com/VitalikButerin?s=20&t=bPOdTxT3_DMCMqzxGTeLGg",
+          },
+          {
+            text: "Buildspace",
+            href: "https://twitter.com/_buildspace",
+          },
+          {
+            text: "Ethereum Foundation",
+            href: "https://twitter.com/ethereum",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={reddit}
+        title="REDDITS"
+        links={[
+          {
+            text: "Ethdev - Ethereum Development and DApps",
+            href: "https://www.reddit.com/r/ethdev/",
+          },
+          {
+            text: "Crypto Devs - Crypto-related Developer Discussions",
+            href: "https://www.reddit.com/r/ethdev/",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={discord}
+        title="DISCORDS"
+        links={[
+          {
+            text: "Ethereum - Ethereum Main",
+            href: "https://discord.com/invite/CetY6Y4",
+          },
+          {
+            text: "Ethereum R&D - Core Technical Ethereum",
+            href: "https://discord.gg/gK3dXFhM",
+          },
+        ]}
+      />
+    </div>
+  );
+}
+
+function ResourceItem({ image, title, links }) {
+  return (
+    <section className="resource-item">
+      <div className="resource-item-header">
+        <img className="resource-item-image" src={image} width="30" alt={title} />
+        <h1 className="resource-item-title">{title}</h1>
+      </div>
+      <ul className="resource-item-links">
+        {links.map((link, index) => (
+          <li key={index} className="resource-item-link">
+            <a href={link.href} target="_blank" rel="noreferrer">
+              {link.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

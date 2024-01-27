@@ -1,3 +1,5 @@
+/* overview.css */
+
 /* * {
   background: #000 !important;
   color: #0f0 !important;
@@ -6,9 +8,10 @@
 
 .overview-section-s1 {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   background-color: white;
-  padding: 9em;
+  padding: 2em;
 }
 
 .h1-overview {
@@ -17,11 +20,15 @@
     "Liberation Mono", Menlo, Courier, monospace;
   padding-bottom: 1em;
   font-weight: 400;
-  width: 90%;
+}
+
+.hr {
+  border-top: 1px solid #8a39e1;
+  margin-bottom: 2em;
 }
 
 .overview-section-p {
-  margin-left: 8em;
+  margin: 0;
   letter-spacing: 0.08em;
   word-wrap: break-word;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -29,5 +36,28 @@
     Segoe UI Symbol;
   font-size: 1em;
   text-align: left;
-  width: 40%;
+  width: 100%;
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+  .overview-section-s1 {
+    padding: 1em;
+  }
+
+  .h1-overview {
+    font-size: 1.5em;
+  }
+
+  .overview-section-p {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive Styles for Phones */
+@media (max-width: 576px) {
+  .h1-overview {
+    font-size: 1.2em;
+  }
 }

@@ -1,68 +1,70 @@
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
+/* resources.css */
 
-.section1-resources {
-  background-color: rgb(220, 230, 226);
+.resources-container {
   display: flex;
-  justify-content: space-around;
-  padding: 3em;
-  margin-bottom: 0px;
-  font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
 }
 
-.section1-resources-sources {
-  background-color: rgb(255, 255, 255);
-  flex-basis: calc(33.333% - 10px);
-  border-radius: 25px;
+.resource-item {
+  text-align: center;
+  margin: 20px;
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.section1-resources-titles {
+.resource-item-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resource-item-image {
+  margin-bottom: 10px;
+}
+
+.resource-item-title {
   font-size: 1.5em;
-  font-family: Montserrat__subset, Montserrat, sans-serif;
-  margin: 1em;
+  font-weight: bold;
+  margin: 0;
 }
 
-.section1-resources-li {
-  margin: 1em;
-  border-bottom:0.5px solid #8a39e1;
-  border-top: 0.5px solid #8a39e1;
+.resource-item-links {
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  color: rgb(99, 95, 95);
-  font-family: Montserrat__subset, Montserrat, sans-serif;
-
+.resource-item-link {
+  list-style: none;
+  margin: 10px 0;
 }
 
-a:hover{
-  background-color: rgb(243, 240, 240);
+.resource-item-link a {
+  text-decoration: none;
+  color: #3498db; /* Modern blue color */
+  transition: color 0.3s ease-in-out; /* Smooth transition effect */
 }
 
-.img-logo{
-  margin-top: 1em;
+.resource-item-link a:hover {
+  text-decoration: underline;
+  color: #007bb5; /* Darker blue color on hover */
 }
 
-.footer-overview {
-  background-color: #8a39e1;
-  height: 100px;
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+  .resource-item {
+    width: 45%;
+  }
 }
 
-.section1-footer-icons {
-  display: flex;
-  justify-content: center;
-  font-size: 3em;
-}
-
-.section1-footer-icons > a {
-  margin-left: 0.5em;
-  margin-top: 0.5em;
-}
-
-.li:nth-child(even) {
-  background-color: #bdf6e9;
+/* Responsive Styles for Phones */
+@media (max-width: 576px) {
+  .resource-item {
+    width: 100%;
+  }
 }
