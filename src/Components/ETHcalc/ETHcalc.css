@@ -1,61 +1,117 @@
 .overview-section-s1 {
-    display: flex;
-    justify-content: flex-start;
-    background-color: white;
-    padding: 9em;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 9em;
+}
+
+.ethereum-balance-checker {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Center items horizontally */
+}
+
+label {
+  font-weight: bold;
+  color: #3498db;
+}
+
+input {
+  padding: 12px;
+  width: 425px;
+  border: 1px solid #3498db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+}
+
+input::placeholder {
+  text-align: center; /* Center the placeholder text horizontally */
+}
+
+input:hover,
+form:hover input {
+  border-color: #2980b9;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.result {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+/* Updated styles for historical balances section */
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjusted styling for the remove button */
+button.remove-button {
+  padding: 8px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 600px) {
+  .ethereum-balance-checker {
+    padding: 15px;
   }
 
-  .ethereum-balance-checker {
-    max-width: 500px; /* Increased max-width */
-    margin: auto;
-    padding: 30px; /* Increased padding */
-    border: 1px solid #3498db;
-    border-radius: 10px; /* Increased border-radius */
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3); /* Increased box-shadow */
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Increased gap between elements */
-  }
-  
-  label {
-    font-weight: bold;
-    color: #3498db;
-  }
-  
+  button,
   input {
-    padding: 12px; /* Increased padding */
-    border: 1px solid #3498db;
-    border-radius: 6px; /* Increased border-radius */
-    outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    width: 100%;
   }
-  
-  input:hover,
-  form:hover input {
-    border-color: #2980b9;
-    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Increased box-shadow effect */
-  }
-  
-  button {
-    padding: 12px; /* Increased padding */
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
-  
-  .result {
-    margin-top: 25px; /* Increased margin-top */
-    font-weight: bold;
-    color: #2ecc71;
-  }
-  
+}

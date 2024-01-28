@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaStar } from 'react-icons/fa'; // Import the star icon from react-icons
 import "./resources.css";
 import twitter from "../../Images/twitter.png";
 import reddit from "../../Images/reddit.png";
@@ -114,10 +115,22 @@ function ResourceItem({ image, title, links }) {
           <li key={index} className="resource-item-link">
             <a href={link.href} target="_blank" rel="noreferrer">
               {link.text}
+              <HeartIcon/>
             </a>
           </li>
         ))}
       </ul>
     </section>
   );
+}
+
+function HeartIcon({ id }) {
+  const [clickedHeart, setClickedHeart] = useState(false);
+
+  const handleHeartClick = (e) => {
+    e.preventDefault();
+    setClickedHeart(!clickedHeart);
+  };
+
+  return <FaStar className={`heart-icon ${clickedHeart ? 'clicked' : ''}`} onClick={handleHeartClick} />;
 }

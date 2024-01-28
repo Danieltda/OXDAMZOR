@@ -2,7 +2,6 @@ import React from "react";
 import "./overview.css";
 
 export default function Overview() {
-  
   return (
     <>
       <div className="overview-section-s1">
@@ -19,8 +18,8 @@ export default function Overview() {
           <br />
           You will find all the resources that I discovered over time. The
           resources will be updated regularly to give developers the latest
-          available resources. As the ethereum space is constantly evolving,
-          more and more amazing tools are build.
+          available resources. As the Ethereum space is constantly evolving,
+          more and more amazing tools are built.
         </p>
       </div>
     </>

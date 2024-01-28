@@ -1,20 +1,30 @@
 /* resources.css */
 
+.App{
+  background-color: rgb(242, 242, 242)
+}
+
 .resources-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px;
+  background-color: #f2f2f2; /* Set light grey background color */
+  border-radius: 12px; /* Add border-radius for rounded corners */
+
+
 }
 
 .resource-item {
   text-align: center;
+  color:#424a7B;
   margin: 20px;
   width: 30%;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Add relative positioning to the container */
 }
 
 .resource-item-header {
@@ -22,6 +32,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  position: relative; /* Add relative positioning to the header */
 }
 
 .resource-item-image {
@@ -32,6 +43,16 @@
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: yellow; /* Set the default color to yellow */
 }
 
 .resource-item-links {
@@ -46,25 +67,50 @@
 
 .resource-item-link a {
   text-decoration: none;
-  color: #3498db; /* Modern blue color */
-  transition: color 0.3s ease-in-out; /* Smooth transition effect */
+  color: grey;
+  border-top: 1px solid #ddd; /* Add top border */
+  border-bottom: 1px solid #ddd; /* Add bottom border */
+  display: block; /* Make the link a block element to occupy full width */
+  padding: 10px 0; /* Add some padding to improve spacing */
 }
 
-.resource-item-link a:hover {
-  text-decoration: underline;
-  color: #007bb5; /* Darker blue color on hover */
+
+.heart-icon {
+  color: grey; /* Default color for the heart */
+  transition: color 0.3s; /* Smooth color transition on click */
+  margin-left: 5px; /* Add some space between the link text and the heart */
+}
+
+.heart-icon.clicked {
+  color: yellow; /* Color when the heart is clicked */
 }
 
 /* Responsive Styles for Tablets */
 @media (max-width: 768px) {
+  .resources-container {
+    padding: 10px; /* Add padding to the container for better spacing */
+  }
+
   .resource-item {
     width: 45%;
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+
+  .resource-item-link a {
+    padding: 8px 0; /* Adjust padding for better touch responsiveness */
   }
 }
 
 /* Responsive Styles for Phones */
 @media (max-width: 576px) {
+  .resources-container {
+    padding: 5px; /* Further reduce padding for smaller screens */
+  }
+
   .resource-item {
     width: 100%;
+    margin: 10px 0; /* Adjust margin for better spacing */
   }
 }
+
+

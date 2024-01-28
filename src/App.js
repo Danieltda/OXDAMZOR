@@ -1,8 +1,9 @@
+// App.jsx
+
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import MetaMask from "./Components/AboutPage/AboutPage.jsx";
-import ETHcalc from "./Components/ETHcalc/ETHcalc.jsx";
 import { SiBlockchaindotcom } from "react-icons/si";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -19,9 +20,6 @@ function App() {
             <Link to="/" className="nav-link link-style">
               Home
             </Link>
-            <Link to="/ETHcalc" className="nav-link link-style">
-              ETHcalc
-            </Link>
             <MetaMask />
           </div>
         </div>
@@ -29,7 +27,6 @@ function App() {
       <div className="container mt-4">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/ETHcalc" element={<ETHcalc />} />
         </Routes>
       </div>
     </div>

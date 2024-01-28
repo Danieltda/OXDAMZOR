@@ -6,9 +6,9 @@ import ETHcalc from "../ETHcalc/ETHcalc";
 function HomePage() {
   return (
     <>
-      <section>
+      {/* <section>
         <Overview />
-      </section>
+      </section> */}
       <section>
         <Resources />
       </section>

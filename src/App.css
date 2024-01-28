@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Alegreya__subset', 'Alegreya', sans-serif !important;
 }
 
 .App {
@@ -10,13 +11,14 @@ body {
 }
 
 .link-style {
-  margin: 1em 3em; /* Adjusted margin for larger screens */
-  font-size: 1.2em; /* Increased font size for larger screens */
+  margin: 1em 3em;
+  font-size: 1.2em;
   text-decoration: none;
   color: white;
   font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
 }
+
 
 .suggest-resource {
   border-radius: 5px;
@@ -30,56 +32,60 @@ body {
 }
 
 .div-blockroot {
-  font-size: 2em; /* Increased font size for larger screens */
+  font-size: 2em;
   font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
+    color:#21253b;
 }
 
-/* Update background color and increase margin */
 .navigation-bar {
   background-color: #8a39e1;
-  padding: 30px; /* Increase padding for more height */
-  margin-bottom: 30px; /* Add margin at the bottom */
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 .link-style {
-  margin: 1em 3em; /* Adjusted margin for larger screens */
-  font-size: 1.2em; /* Increased font size for larger screens */
+  margin: 1em 3em;
+  font-size: 1.2em;
   text-decoration: none;
   color: white;
   font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
-  transition: color 0.3s; /* Added transition effect for color change */
+  transition: color 0.3s;
 }
 
 .link-style:hover {
-  color: #aaaaaa; /* Change text color on hover */
+  color: #aaaaaa;
 }
 
-/* Responsive Styles for Tablets */
+.ethereum-resources {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .link-style {
     margin: 0.5em 0.5em;
-    font-size: 1em; /* Adjust font size for smaller screens */
+    font-size: 1em;
   }
 
   .div-blockroot {
-    font-size: 1.5em; /* Adjust font size for smaller screens */
+    font-size: 1.5em;
   }
 }
 
-/* Responsive Styles for Phones */
 @media (max-width: 576px) {
   .link-style {
     margin: 0.5em 0.5em;
-    font-size: 1em; /* Adjust font size for smaller screens */
+    font-size: 1em;
   }
 
   .div-blockroot {
-    font-size: 1.2em; /* Adjust font size for smaller screens */
+    font-size: 1.2em;
   }
 
   .navigation-bar {
-    padding: 20px; /* Adjust padding for phones */
+    padding: 20px;
   }
 }
