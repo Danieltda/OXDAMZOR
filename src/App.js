@@ -24,11 +24,11 @@ function App() {
           </div>
         </div>
       </nav>
-      <div className="container mt-4">
+      {/* <div className="container mt-4"> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

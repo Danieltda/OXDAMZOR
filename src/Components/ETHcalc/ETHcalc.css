@@ -15,7 +15,10 @@
 }
 
 #about-me{
-  color: #424a7B;
+  color: grey;
+  font-weight:bold;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 .ethereum-balance-checker form {
@@ -117,6 +120,17 @@
 
 .ethereum-balance-checker button.remove-button:hover {
   background-color: #c0392b;
+}
+
+.total-historical-balance{
+  font-weight: bold;
+}
+
+.h2-historical-balance{
+  color: grey;
+  font-weight:bold;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 /* Responsive Styles */

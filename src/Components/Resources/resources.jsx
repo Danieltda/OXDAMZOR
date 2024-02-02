@@ -13,7 +13,7 @@ export default function Resources() {
     <div className="resources-container">
       <ResourceItem
         image={documentation}
-        title="Documentation"
+        title="DOCUMENTATION"
         links={[
           {
             text: "Ethereum Docs - Ethereum Development Documentation",

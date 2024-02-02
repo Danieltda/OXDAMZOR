@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
+
 // EthereumBalanceChecker component
 const EthereumBalanceChecker = () => {
   const [ethereumAddress, setEthereumAddress] = useState('');
@@ -108,8 +109,8 @@ const EthereumBalanceChecker = () => {
       )}
 
       {historicalBalances.length > 0 && (
-        <div>
-          <h2>Historical Balances:</h2>
+        <div className='historical-balances'>
+          <h2 className='h2-historical-balance'>Historical Balances:</h2>
           <ul>
             {historicalBalances.map((entry, index) => (
               <li key={index}>
@@ -121,7 +122,7 @@ const EthereumBalanceChecker = () => {
               </li>
             ))}
           </ul>
-          <p>Total Historical Balance: {calculateTotalHistoricalBalance()} ETH</p>
+          <p className='total-historical-balance'>Total Historical Balance: {calculateTotalHistoricalBalance()} ETH</p>
         </div>
         
       )}
