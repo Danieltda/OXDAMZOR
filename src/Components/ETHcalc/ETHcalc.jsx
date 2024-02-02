@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './ETHcalc.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 // EthereumBalanceChecker component
 const EthereumBalanceChecker = () => {
@@ -99,7 +102,7 @@ const EthereumBalanceChecker = () => {
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
       {balance !== null && (
-        <p>
+        <p className="balance-of">
           Balance of {ethereumAddress}: {balance} ETH
         </p>
       )}
@@ -111,7 +114,10 @@ const EthereumBalanceChecker = () => {
             {historicalBalances.map((entry, index) => (
               <li key={index}>
                 {entry.address}: {entry.balance} ETH
-                <button onClick={() => handleRemove(index)}>Remove</button>
+                <button onClick={() => handleRemove(index)}>
+  <FontAwesomeIcon icon={faTimes} />
+</button>
+
               </li>
             ))}
           </ul>
