@@ -134,6 +134,7 @@
 }
 
 /* Responsive Styles */
+/* Responsive Styles */
 @media only screen and (max-width: 600px) {
   .ethereum-balance-checker {
     padding: 15px;
@@ -154,6 +155,26 @@
   .ethereum-balance-checker button.remove-button {
     width: 20px;
     height: 20px;
-    font-size: 12px;
+    font-size: 3px;
+  }
+
+  /* Adjust historical balances heading font size for smaller screens */
+  .ethereum-balance-checker .historical-balances h2 {
+    font-size: 1.2em;
+  }
+
+  /* Make the historical balances section smaller for smaller screens */
+  .ethereum-balance-checker .historical-balances {
+    margin-top: 10px; /* Adjust top margin for spacing */
+  }
+
+  /* Adjust font size for historical balances list items */
+  .ethereum-balance-checker .historical-balances li {
+    font-size: 0.8em;
+  }
+
+  /* Adjust font size for total historical balance */
+  .ethereum-balance-checker .historical-balances .total-historical-balance {
+    font-size: 1em;
   }
 }

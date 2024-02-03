@@ -1,30 +1,42 @@
-  /* footer.css */
+/* footer.css */
 
 .footer {
-    background-color: #8a39e1;
-    color: #fff;
-    padding: 70px;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    margin-top: 70px;
-  }
-  
-  .social-icons {
-    margin-top: 10px;
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #fff;
-  }
-  
-  .icon:hover {
-    color: #f0f0f0;
-  }
-  
-  p{
-    font-family: 'Alegreya__subset', 'Alegreya', sans-serif !important;
-  }
-  
+  background-color: #8a39e1;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  margin-top: 70px;
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width to your preferred size */
+}
+
+.social-icons {
+  /* display: flex;
+  align-items: center; */
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 30px; /* Adjust the font-size to your preferred size */
+  margin: 0 10px;
+  color: #fff;
+}
+
+.icon:hover {
+  color: #f0f0f0;
+}
+
+p {
+  font-family: 'Alegreya__subset', 'Alegreya', sans-serif !important;
+}

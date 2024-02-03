@@ -2,18 +2,24 @@
 import React from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { SiBlockchaindotcom } from "react-icons/si";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <p>CONTACT ME</p>
+      <div className="logo">
+        <SiBlockchaindotcom />
+      </div>
+      <div className="title">
+        <p> OXDAMZOR</p>
+      </div>
       <div className="social-icons">
-        <a href="https://twitter.com/your_twitter_handle" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/0xgramz" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} className="icon" />
         </a>
-        <a href="https://www.linkedin.com/in/your_linkedin_profile" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} className="icon" />
+        <a href="https://discord.gg/VucgpBpQ" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faDiscord} className="icon" />
         </a>
       </div>
     </div>

@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { FaStar } from 'react-icons/fa'; // Import the star icon from react-icons
 import "./resources.css";
 import twitter from "../../Images/twitter.png";
+import wallet from "../../Images/wallet.png"
+import started from "../../Images/rocket-icon-logo-on-transparent-background-created-with-generative-ai-png.png"
+import youtube from "../../Images/youtube.webp"
 import reddit from "../../Images/reddit.png";
-import documentation from "../../Images/documentation.jpeg";
+import documentation from "../../Images/documentation.jpg"
 import discord from "../../Images/discord.png";
 import devtools from "../../Images/devtools.jpg";
 import cryptography from "../../Images/cryptography.png";
@@ -11,6 +14,20 @@ import cryptography from "../../Images/cryptography.png";
 export default function Resources() {
   return (
     <div className="resources-container">
+        <ResourceItem
+        image={started}
+        title="GET STARTED"
+        links={[
+          {
+            text: "Ethereum Docs - Ethereum Development Documentation",
+            href: "https://ethereum.org/en/developers/docs/",
+          },
+          {
+            text: "Ethdocs - Ethereum Homestead Documentation",
+            href: "https://ethereum.org/en/developers/docs/",
+          },
+        ]}
+      />
       <ResourceItem
         image={documentation}
         title="DOCUMENTATION"
@@ -46,6 +63,16 @@ export default function Resources() {
       <ResourceItem
         image={cryptography}
         title="CRYPTOGRAPHY"
+        links={[
+          {
+            text: "Cryptocellar - Cryptology and Its History",
+            href: "https://cryptocellar.org/",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={wallet}
+        title="WALLETS"
         links={[
           {
             text: "Cryptocellar - Cryptology and Its History",
@@ -96,6 +123,20 @@ export default function Resources() {
           {
             text: "Ethereum R&D - Core Technical Ethereum",
             href: "https://discord.gg/gK3dXFhM",
+          },
+        ]}
+      />
+      <ResourceItem
+        image={youtube}
+        title="YOUTUBE"
+        links={[
+          {
+            text: "Austin Griffith",
+            href: "https://www.youtube.com/@austingriffith3550",
+          },
+          {
+            text: "DeFi Developer Academy",
+            href: "https://www.youtube.com/@DeFiDeveloperAcademy/videos",
           },
         ]}
       />
