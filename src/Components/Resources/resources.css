@@ -35,8 +35,13 @@
   position: relative; /* Add relative positioning to the header */
 }
 
+/* resources.css */
+
 .resource-item-image {
   margin-bottom: 10px;
+  /* Increase the width and height of the images */
+  width: 55px; /* Adjust the width to your desired size */
+  height: 55px; /* Adjust the height to your desired size */
 }
 
 .resource-item-title {

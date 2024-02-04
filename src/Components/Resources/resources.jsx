@@ -6,9 +6,9 @@ import wallet from "../../Images/wallet.png"
 import started from "../../Images/rocket-icon-logo-on-transparent-background-created-with-generative-ai-png.png"
 import youtube from "../../Images/youtube.webp"
 import reddit from "../../Images/reddit.png";
-import documentation from "../../Images/documentation.jpg"
+import documentation from "../../Images/documentation.png"
 import discord from "../../Images/discord.png";
-import devtools from "../../Images/devtools.jpg";
+import devtools from "../../Images/devtools.png";
 import cryptography from "../../Images/cryptography.png";
 
 export default function Resources() {
@@ -55,8 +55,8 @@ export default function Resources() {
             href: "https://hardhat.org/",
           },
           {
-            text: "Metamask - Blockchain Wallet",
-            href: "https://metamask.io/",
+            text: "Foundry",
+            href: "https://book.getfoundry.sh/",
           },
         ]}
       />
@@ -68,6 +68,10 @@ export default function Resources() {
             text: "Cryptocellar - Cryptology and Its History",
             href: "https://cryptocellar.org/",
           },
+                    {
+            text: "Awesome Cryptography",
+            href: "https://github.com/sobolevn/awesome-cryptography",
+          },
         ]}
       />
       <ResourceItem
@@ -75,8 +79,16 @@ export default function Resources() {
         title="WALLETS"
         links={[
           {
-            text: "Cryptocellar - Cryptology and Its History",
-            href: "https://cryptocellar.org/",
+            text: "MetaMask",
+            href: "https://metamask.io/",
+          },         
+          {
+            text: "Exodus",
+            href: "https://www.exodus.com/",
+          },
+          {
+            text: "MyEtherWallet",
+            href: "https://www.myetherwallet.com/",
           },
         ]}
       />
@@ -95,6 +107,14 @@ export default function Resources() {
           {
             text: "Ethereum Foundation",
             href: "https://twitter.com/ethereum",
+          },
+          {
+            text: "ETHGlobal",
+            href: "https://twitter.com/ETHGlobal",
+          },
+          {
+            text: "Ethereum.org",
+            href: "https://twitter.com/ethdotorg",
           },
         ]}
       />
@@ -117,12 +137,16 @@ export default function Resources() {
         title="DISCORDS"
         links={[
           {
-            text: "Ethereum - Ethereum Main",
-            href: "https://discord.com/invite/CetY6Y4",
+            text: "Ethereum.org",
+            href: "https://discord.gg/ethereum-org",
           },
           {
             text: "Ethereum R&D - Core Technical Ethereum",
-            href: "https://discord.gg/gK3dXFhM",
+            href: "https://discord.gg/B7XfU9JebJ",
+          },
+          {
+            text: "ETHGlobal",
+            href: "https://discord.gg/ethglobal",
           },
         ]}
       />
