@@ -196,7 +196,7 @@ function HeartIcon({ id }) {
 
   useEffect(() => {
     // Load clicked state from local storage on component mount
-    const savedClickedState = JSON.parse(localStorage.getItem(`heart-${id}`));
+    const savedClickedState = JSON.parse(sessionStorage.getItem(`heart-${id}`));
     if (savedClickedState !== null) {
       setClickedHeart(savedClickedState);
     }
@@ -207,7 +207,7 @@ function HeartIcon({ id }) {
     const newClickedState = !clickedHeart;
     setClickedHeart(newClickedState);
     // Save clicked state to local storage
-    localStorage.setItem(`heart-${id}`, JSON.stringify(newClickedState));
+    sessionStorage.setItem(`heart-${id}`, JSON.stringify(newClickedState));
   };
 
   return <FaStar className={`heart-icon ${clickedHeart ? 'clicked' : ''}`} onClick={handleHeartClick} />;
