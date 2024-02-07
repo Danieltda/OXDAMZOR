@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaStar } from 'react-icons/fa'; // Import the star icon from react-icons
 import "./resources.css";
 import twitter from "../../Images/twitter.png";
@@ -10,6 +10,8 @@ import documentation from "../../Images/documentation.png"
 import discord from "../../Images/discord.png";
 import devtools from "../../Images/devtools.png";
 import cryptography from "../../Images/cryptography.png";
+import { v4 as uuidv4 } from 'uuid';
+
 
 export default function Resources() {
   return (
@@ -19,12 +21,12 @@ export default function Resources() {
         title="GET STARTED"
         links={[
           {
-            text: "Ethereum Docs - Ethereum Development Documentation",
-            href: "https://ethereum.org/en/developers/docs/",
+            text: "Ethereum Development",
+            href: "https://ethereum.org/developers/docs",
           },
           {
-            text: "Ethdocs - Ethereum Homestead Documentation",
-            href: "https://ethereum.org/en/developers/docs/",
+            text: "Mastering Ethereum",
+            href: "https://github.com/ethereumbook/ethereumbook",
           },
         ]}
       />
@@ -176,11 +178,11 @@ function ResourceItem({ image, title, links }) {
         <h1 className="resource-item-title">{title}</h1>
       </div>
       <ul className="resource-item-links">
-        {links.map((link, index) => (
-          <li key={index} className="resource-item-link">
+        {links.map((link) => (
+          <li key={uuidv4()} className="resource-item-link">
             <a href={link.href} target="_blank" rel="noreferrer">
               {link.text}
-              <HeartIcon/>
+              <HeartIcon id={link.href} />
             </a>
           </li>
         ))}
@@ -192,10 +194,22 @@ function ResourceItem({ image, title, links }) {
 function HeartIcon({ id }) {
   const [clickedHeart, setClickedHeart] = useState(false);
 
+  useEffect(() => {
+    // Load clicked state from local storage on component mount
+    const savedClickedState = JSON.parse(localStorage.getItem(`heart-${id}`));
+    if (savedClickedState !== null) {
+      setClickedHeart(savedClickedState);
+    }
+  }, [id]);
+
   const handleHeartClick = (e) => {
     e.preventDefault();
-    setClickedHeart(!clickedHeart);
+    const newClickedState = !clickedHeart;
+    setClickedHeart(newClickedState);
+    // Save clicked state to local storage
+    localStorage.setItem(`heart-${id}`, JSON.stringify(newClickedState));
   };
 
   return <FaStar className={`heart-icon ${clickedHeart ? 'clicked' : ''}`} onClick={handleHeartClick} />;
 }
+
