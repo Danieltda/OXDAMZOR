@@ -57,8 +57,16 @@ export default function Resources() {
             href: "https://hardhat.org/",
           },
           {
-            text: "Foundry",
+            text: "Foundry - Smart Contract Development Toolchain",
             href: "https://book.getfoundry.sh/",
+          },
+          {
+            text: "Solidity - Developing Smart Contracts",
+            href: "https://soliditylang.org/",
+          },
+          {
+            text: "Solidity - Developers Tools",
+            href: "https://www.alchemy.com/best/solidity-developer-tools",
           },
         ]}
       />
@@ -92,6 +100,10 @@ export default function Resources() {
             text: "MyEtherWallet",
             href: "https://www.myetherwallet.com/",
           },
+          {
+            text: "Gnosis Safe",
+            href: "https://safe.global/",
+          },
         ]}
       />
       <ResourceItem
@@ -117,6 +129,10 @@ export default function Resources() {
           {
             text: "Ethereum.org",
             href: "https://twitter.com/ethdotorg",
+          },
+          {
+            text: "Gavin Wood",
+            href: "https://twitter.com/gavofyork",
           },
         ]}
       />
