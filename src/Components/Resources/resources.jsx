@@ -164,6 +164,10 @@ export default function Resources() {
             text: "DeFi Developer Academy",
             href: "https://www.youtube.com/@DeFiDeveloperAcademy/videos",
           },
+          {
+            text: "Patrick Collins",
+            href: "https://www.youtube.com/@PatrickAlphaC/videos",
+          },
         ]}
       />
     </div>
